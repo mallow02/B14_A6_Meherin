@@ -1,4 +1,6 @@
 import './globals.css';
+import PlanProvider from '../components/PlanProvider';
+import SiteHeader from '../components/SiteHeader';
 
 export const metadata = {
   title: { default: 'FitLog — Workout Library', template: '%s | FitLog' },
@@ -6,5 +8,5 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return <html lang="en"><body>{children}</body></html>;
+  return <html lang="en"><body><PlanProvider><a href="#main" className="sr-only focus:not-sr-only">Skip to content</a><SiteHeader /><main id="main">{children}</main></PlanProvider></body></html>;
 }
