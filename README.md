@@ -1,3 +1,69 @@
+# FitLog — Train with intent
+
+A responsive gym companion built for the Programming Hero Assignment 6. Explore twelve exercises from the provided API, create a daily workout plan, and save lifts for another session.
+
+## Technologies
+
+- Next.js App Router and React
+- Tailwind CSS with a small shared stylesheet
+- Sonner toast components and Lucide React icons
+- Locally bundled Inter and Oswald fonts
+- Browser localStorage for plan and saved workouts
+
+## Features
+
+1. Responsive workout library with exercise images, muscle tags, equipment, and statistics.
+2. Dynamic detail pages using the single-workout API, with full specifications and instructions.
+3. Today's Plan and Saved lists with live navigation counters and exercise, minute, and calorie totals.
+4. Five unfinished exercise limit, duplicate prevention, completion tracking, and removal controls.
+5. Sorting by duration (lowest first), calories (highest first), or rating (highest first).
+6. Toast notifications, animated loading states, retry controls, and a custom 404 page.
+7. Persistent browser storage so the plan survives refreshes.
+
+## Run locally
+
+Requires Node.js 20.9 or later.
+
+```bash
+npm install
+npm run dev
+```
+
+Open http://localhost:3000. To check the production app:
+
+```bash
+npm run lint
+npm run build
+npm start
+```
+
+## API and routes
+
+- Library: https://api.abcz.workers.dev/api/fitlog
+- Details: https://api.abcz.workers.dev/api/fitlog/:id
+- Pages: `/`, `/workouts/[id]`, and `/my-plan`
+- Saved tab: `/my-plan?tab=saved`
+
+Completed lifts remain visible in the plan and its totals. Completing a lift releases one of the five unfinished-lift slots. Removing a lift updates the totals. Saved lifts do not change plan totals.
+
+## Repository
+
+- GitHub repository: [B14_A6_Meherin](https://github.com/mallow02/B14_A6_Meherin)
+
+## Verification
+
+- `npm run lint` and `npm run build` pass.
+- Browser checks cover API loading, detail pages, adding and saving workouts, live totals, completion, removal, and persistence after reload.
+- Mobile and desktop checks confirm a single-column and three-column library with no horizontal overflow.
+- The custom 404 page works for unknown routes.
+- The original images and design files are kept in `assets/` and `UI/`.
+
+## Original assignment requirements
+
+The original instructions and supplied resources are preserved below.
+
+---
+
 # 💪 B14-A6-Fit Log
 
 --- 
@@ -163,5 +229,5 @@ Deploy your project on Vercel, Netlify, Cloudflare Pages, or anywhere else befor
 ## 📬 Submission
 Fill in both links before submitting:
 
-- Live Link:
-- GitHub Repository Link:
+- Live Link:https://b14a6meherin.vercel.app/
+- GitHub Repository Link: https://github.com/mallow02/B14_A6_Meherin
