@@ -48,7 +48,7 @@ Completed lifts remain visible in the plan and its totals. Completing a lift rel
 
 ## Repository
 
-- GitHub repository: [B14_A6_Meherin](https://github.com/mallow02/B14_A6_Meherin)
+- GitHub repository: [B14_A6_Meherin](https://github.com/meherin02/B14_A6_Meherin)
 
 ## Verification
 
@@ -230,4 +230,4 @@ Deploy your project on Vercel, Netlify, Cloudflare Pages, or anywhere else befor
 Fill in both links before submitting:
 
 - Live Link:https://b14a6meherin.vercel.app/
-- GitHub Repository Link: https://github.com/mallow02/B14_A6_Meherin
+- GitHub Repository Link: https://github.com/meherin02/B14_A6_Meherin
